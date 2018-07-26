@@ -92,7 +92,6 @@ map.on('load', function () {
     "source-layer": "countriesbetter",
     "minzoom": 0,
     "maxzoom": 8,
-    "filter": ['in', 'name_low'].concat(projectCountries),
     "paint": {
       "fill-pattern": "lines-red-4",
       "fill-outline-color": "#EFB4B4"
