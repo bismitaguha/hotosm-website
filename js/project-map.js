@@ -1,9 +1,11 @@
 var countryList = countries.split(',')
 countryList.forEach((country, countryIndex) => {
-  countryList[countryIndex] = country.trim().toLowerCase();
+  countryList[countryIndex] = country.trim().toLowerCase()
 })
 
-console.log(countryList)
+$(document).ready(function (){
+  document.getElementById('Countries-Covered').innerHTML = countryList.length
+})
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiaG90IiwiYSI6IlBtUmNiR1kifQ.dCS1Eu9DIRNZGktc24IwtA';
 var map = new mapboxgl.Map({
