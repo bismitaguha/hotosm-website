@@ -138,6 +138,7 @@ map.on('load', function () {
     "source-layer": "countries-polygon-7jl2br",
     "minzoom": 0,
     "maxzoom": 8,
+    "filter": ['in', 'name_low'].concat(projectCountries),
     "paint": {
       "fill-pattern": "lines-red-4",
       "fill-outline-color": "#EFB4B4"
