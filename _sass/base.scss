@@ -2407,7 +2407,7 @@ em {
     grid-template-columns: repeat(12, 1fr);
   }
   .article {
-    border-top: 1px solid $border-color;
+    // border-top: 1px solid $border-color;
     margin: 24px 0 40px;
     padding-top: 24px;
     @media (min-width: $screen-sm) {
@@ -2446,7 +2446,7 @@ em {
   }
   .meta {
     padding-top: 40px;
-    border-top: 1px solid $border-color;
+    // border-top: 1px solid $border-color;
     margin: 24px 0 40px;
     @media (min-width: $screen-sm) {
       grid-column: 10 / -1;
