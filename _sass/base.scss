@@ -1547,12 +1547,37 @@ em {
         border-top: 2px solid transparent;
         border-bottom: 2px solid transparent;
         &.active {
+          padding: 0px;
+          font-weight: bold;
           border-bottom: 2px solid $red;
+          &:after {
+            display: block;
+            padding: 6px 0;
+            content: '';
+            border-bottom: solid 2px #fff;  
+            transform: scaleX(0);  
+            transition: transform 300ms ease-in-out;
+            transform-origin:100% 50%;          
+          }
+          &:hover:after {
+            transform: scaleX(1);
+            transform-origin:0 50%;
+          }
         }
-        &:hover, &:active, &:focus {
-          border-bottom: 2px solid tint($red, 75%);
+        &:after {
+          display: block;
+          padding: 6px 0;
+          content: '';
+          border-bottom: solid 2px tint($red, 60%);  
+          transform: scaleX(0);  
+          transition: transform 300ms ease-in-out;
+          transform-origin:100% 50%;          
         }
+        &:hover:after {
+          transform: scaleX(1);
+          transform-origin:0 50%;
       }
+    }
       @media (min-width: $screen-sm) and (max-width: $screen-md) {
         padding: 15px 0;
         margin-right: 16px;
